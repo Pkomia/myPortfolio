@@ -1,0 +1,68 @@
+<!-- {% load static %} -->
+
+<div class="page-content">
+    <div class="container-fluid px-0">
+       <div class="resume-container">
+          <div class="shadow-1-strong bg-dark" id="introo">
+             <div class="bg-info text-white">
+                <div class="cover bg-image">
+                   <!-- <img src="images/diablobg.jpg"/> -->
+                   <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);backdrop-filter: blur(2px);">
+                      <div class="text-center pt-5">
+                         <div class="avatar p-1"><img class="img-thumbnail shadow-5-strong rounded-circle"
+                               src="{% static 'img/pradeep.jpeg' %}" width="160" height="160" />
+                            <div class="circle" style="animation-delay: -3s"></div>
+                            <div class="circle" style="animation-delay: -2s"></div>
+                            <div class="circle" style="animation-delay: -1s"></div>
+                            <div class="circle" style="animation-delay: 0s"></div>
+                         </div>
+                         <div class="header-bio mt-1">
+                            <div data-aos="zoom-in" data-aos-delay="0">
+                               <h2 class="h1">Pradeep Kushwaha</h2>
+                               <p>Django Developer | Competetive Coder</p>
+                            </div>
+                            <div class="header-social mb-1 d-print-none" data-aos="zoom-in" data-aos-delay="200">
+                               <nav role="navigation">
+                                  <ul class="nav justify-content-center">
+                                     <li class="nav-item"><a class="nav-link" href="https://github.com/Pkomia"
+                                           title="Github"><i class="fab fa-github"></i><span
+                                              class="menu-title sr-only">Github</span></a>
+                                     </li>
+                                     <li class="nav-item"><a class="nav-link"
+                                           href="https://www.linkedin.com/in/pradpkushwaha-4a0966200/" title="LinkedIn"><i
+                                              class="fab fa-linkedin-in"></i><span
+                                              class="menu-title sr-only">LinkedIn</span></a>
+                                      
+                                  </ul>
+                               </nav>
+                            </div>
+                            <div class="d-print-none"><a
+                                  class="fancyButton btn btn-outline-light btn-lg shadow-sm mt-1 me-3"
+                                  href="https://drive.google.com/file/d/1-eGGl7UNHmLLOoW47ljXdjFYDnrtaGdM/view?usp=sharing" data-aos="fade-right"
+                                  data-aos-delay="700">Download CV</a>
+                               <a class="fancyButton btn btn-default rex-primary-btn-effect-No btn btn-info btn-lg shadow-sm mt-1"
+                                  href="{% url 'contact' %}" data-aos="fade-left" data-aos-delay="700">Contact Me</a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="aboutme">
+            {% include 'home/aboutme.html' %}
+  
+          <div class="skill">
+            {% include 'home/skills.html'%}
+          </div>
+
+          <div class="experience">
+            {% include 'home/experience.html' %}
+          </div>
+
+          <div class="education">
+            {% include 'home/education.html' %}
+          </div>
+       </div>
+    </div>
+ </div>
